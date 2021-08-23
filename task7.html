@@ -1,25 +1,98 @@
 <html lang="en">
     <head>
         <title>Document guvi</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                background-color: #0e0e0e;
+            }
+            .form-card{
+                width: 100%;
+                max-width: 450px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .border-sec{
+                border: 3px solid #000000;
+                margin: 7px;
+                border-radius: 3px;
+            }
+            input[type=text]{
+                width: 100%;
+                border-width: 0px 0px 1px 0px;
+            }
+            h2{
+                background: red;
+                padding: 4px;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                margin: 3px 7px;
+            }
+            h2 span{
+                font-size: 25px;
+                font-family: 'Circular-Loom';
+                font-style: italic;
+            }
+            table{
+                padding: 0px 10px;
+            }
+            table tr td{
+                font-size: 12px;
+                font-family: 'Circular-Loom';
+                color: #000000;
+            }
+            .checkbox{
+                font-size: 14px;
+                font-weight: 600;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
            <div class="form-card">
+             <div class="border-sec">  
               <h2>Yes! I want to subcribe to <span>Mag-O-Zine</span></h2>
               <table>
                   <tr>
                       <td><input type="text" name="first-name"><span>First Name</span></td>
-                      <td><input type="text" name="last-name"><span>Last Name</span></td> 
+                      <td colspan="2"><input type="text" name="last-name"><span>Last Name</span></td> 
                   </tr>
                   <tr>
-                    <td><input type="text" name="Address"><span>Address</span></td> 
+                    <td colspan="3"><input type="text" name="Address"><span>Address</span></td> 
                   </tr>
                   <tr>
                     <td><input type="text" name="city"><span>City</span></td>
                     <td><input type="text" name="state"><span>State</span></td>
                     <td><input type="text" name="zip"><span>Zip</span></td>
                   </tr>
-              </table> 
+                  <tr>
+                      <td colspan="3" class="checkbox">
+                          <label>Subscribe for: label</label>
+                            <input type="checkbox">1 year ($19.95) 
+                            <input type="checkbox">2 year ($35.00)
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="3" class="checkbox">
+                         <label>Send me more information about:</label><br>
+                         <input type="checkbox"> Computer-Zine <br>
+                         <input type="checkbox"> Fishing-Zine <br>
+                         <input type="checkbox"> Cat-O-Zine <br>
+                      </td>
+                  </tr>
+              </table>
+             </div>
            </div>       
         </div>
     </body>
