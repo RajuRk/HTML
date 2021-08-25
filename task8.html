@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guvi</title>
+    <style>
+        body{
+           padding: 0;
+           margin: 0;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+        }
+        table,tr,td{
+           border: 1px solid #000; 
+           border-collapse: collapse;
+           text-align: center;
+           padding: 12px;
+        }
+        .table-sec{
+           width: 500px;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="table-sec">
+            <center><p>Health Chart</p></center>
+            <table>
+                <tr>
+                    <td rowspan="2">State of Health</td>
+                    <td colspan="2">Fasting Value</td>
+                    <td>After Eating</td>
+                </tr>
+                <tr>
+                    <td>Minimum</td>
+                    <td>Maximum</td>
+                    <td>2 hours after eating</td>
+                </tr>
+                <tr>
+                    <td>Healthy</td>
+                    <td>70</td>
+                    <td>100</td>
+                    <td>Less than 140</td>
+                </tr>
+                <tr>
+                    <td>Pre-Diabetes</td>
+                    <td>101</td>
+                    <td>126</td>
+                    <td>140 to 200</td>
+                </tr>
+                <tr>
+                    <td>Diabetes</td>
+                    <td>More than 126</td>
+                    <td>N/A</td>
+                    <td>More than 200</td>
+                </tr>
+            </table>
+           </div>
+        </div>
+    </body>
+</html>
