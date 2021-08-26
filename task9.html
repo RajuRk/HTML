@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <title>Document Guvi</title>
+    <style>
+       body{
+          padding: 0;
+          margin: 0;   
+       }
+       input{
+           width: 100%;
+           height: 35px;
+           border-radius: 5px;
+           box-shadow: none;
+           border-color: #333;
+           margin-bottom: 10px;
+       }
+       select{
+           margin-bottom: 10px;
+           width: 100%;
+           height: 35px;
+           border-color: #333;
+           border-width: 2px;
+           border-radius: 5px;
+       }
+       textarea{
+           width: 100%;
+           height: 100px;
+           margin-bottom: 10px;
+       }
+       .form-design{
+           width: 300px;
+           margin: 10px auto;
+           background-color: #e8e8e8;
+           padding: 10px;
+       }
+       .radio,
+       .checkbox{
+           width: auto;
+       }
+    </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="form-design">
+            
+          <form>
+            <label>Name:</label>
+            <input type="text" name="name" value="Rajkumar" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" value="abc@gmail.com" required><br>
+            <label>Phone:</label>
+            <input type="tel" name="tel" value="9999999999" required><br>
+            <label>Color:</label>
+            <select name="color">
+               <option value="red">Red</option>
+               <option value="green">Green</option>
+               <option value="yellow">Yellow</option>
+            </select>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" class="radio">
+            <label>Male</label>
+            <input type="radio" name="gender" value="female" class="radio">
+            <label>female</label>
+            <input type="radio" name="gender" value="others" class="radio">
+            <label>Others</label>
+            
+            <label>vehicle</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="checkbox">
+            <label> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="checkbox">
+            <label> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="checkbox">
+            <label> I have a boat</label><br>
+            <label>Message:</label>
+            <textarea name="message" value="Message" required>Message</textarea>
+            <input type="submit" value="Submit">
+            
+          </form>
+       </div>  
+    </div>
+    </body>
+</html>
